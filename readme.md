@@ -1,15 +1,15 @@
 devi — a DeviantArt client
 ===
 
-**devi** uses the DeviantArt RSS APIs to display thumbnail listings.
-I wrote this because I was feeling bored.
-It works reasonably well, though.
+**devi** uses the DeviantArt RSS API to display thumbnail listings.
+I created this because I was feeling bored.
+It works reasonably well, though!
 Not many features are supported.
 
 usage
 ---
 
-**dependencies**:
+**dependencies:**
 - TLSe (Git submodule)
   - `libtomcrypt` (external)
   - `libtommath` (external)

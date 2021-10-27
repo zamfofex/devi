@@ -26,7 +26,7 @@ make
 ~~~
 
 Note that as an alternative approach, TLSe allows `libtomcrypt` and `libtommath` to be unavailable on the system by compiling as an amalgamation.
-Run `make LIBS= CPPFLAGS=-DTLS_AMALGAMATION` to employ that techinique.
+Run `make LIBS= CPPFLAGS=-DTLS_AMALGAMATION` to employ that technique.
 
 screenshots
 ---

@@ -1,0 +1,8 @@
+*
+!/.gitignore
+!/.gitmodules
+!/sxml
+!/tlse
+!/devi.c
+!/main.c
+!/readme.md

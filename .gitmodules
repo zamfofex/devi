@@ -1,0 +1,6 @@
+[submodule "sxml"]
+	path = sxml
+	url = https://github.com/capmar/sxml
+[submodule "tlse"]
+	path = tlse
+	url = https://github.com/eduardsui/tlse

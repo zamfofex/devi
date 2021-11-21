@@ -36,6 +36,6 @@ screenshots
 license
 ---
 
-**devi** by zamfofex, October of 2021
+**devi** by zamfofex, October and November of 2021
 
 Copyleft: This is a free work, you can copy, distribute, and modify it under the terms of the Free Art License <https://artlibre.org/licence/lal/en/>

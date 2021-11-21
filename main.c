@@ -162,6 +162,8 @@ static void devi_percent(string)
 	int i = 0;
 	for (int j = 0 ; j < length ; i++, j++)
 	{
+		string[i] = string[j];
+		
 		if (string[j] == '+') string[i] = ' ';
 		
 		if (string[j] != '%') continue;
@@ -169,11 +171,11 @@ static void devi_percent(string)
 		int a = devi_hex(string[j + 1]);
 		if (a < 0) continue;
 		
-		int b = devi_hex(string[j + 1]);
+		int b = devi_hex(string[j + 2]);
 		if (b < 0) continue;
 		
-		int c = (a << 8) | b;
-		if (c == 0) continue;
+		int c = a * 0x10 + b;
+		if (c == '\0') continue;
 		
 		string[i] = c;
 		
@@ -425,8 +427,7 @@ int main()
 		clean_address:
 		freeaddrinfo(info);
 		clean:
-		shutdown(fd, SHUT_WR);
-		shutdown(fd, SHUT_RD);
+		shutdown(fd, SHUT_RDWR);
 		close(fd);
 	}
 }
